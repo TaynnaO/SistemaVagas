@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+    <link rel="stylesheet" href=".css/rascunhocurriculo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Currículo</h1>
+        <form action="upload_curriculo.php" method="post" enctype="multipart/form-data">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="objetivo">Objetivo:</label>
+            <textarea id="objetivo" name="objetivo" rows="4" required></textarea>
+
+            <label for="experiencia">Experiência Profissional:</label>
+            <textarea id="experiencia" name="experiencia" rows="6" required></textarea>
+
+            <label for="formacao">Formação Acadêmica:</label>
+            <textarea id="formacao" name="formacao" rows="4" required></textarea>
+
+            <label for="habilidades">Habilidades:</label>
+            <textarea id="habilidades" name="habilidades" rows="4" required></textarea>
+
+            <label for="curriculo">Anexar Currículo (PDF):</label>
+            <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+
+            <button type="submit">Enviar Currículo</button>
+        </form>
+    </div>
+</body>
+</html>
